@@ -1,0 +1,39 @@
+// Breakpoint generator
+@mixin breakpoint($lower: null, $upper: null) {
+
+  $_only-upper: null;
+  $_only-lower: null;
+  $_lower: map-get($breakpoints, $lower);
+  $_upper: map-get($breakpoints, $upper);
+
+  @if ($lower != null) and ($upper == null) { $_only-lower: true; }
+  @if ($lower == null) and ($upper != null) { $_only-upper: true; }
+
+  @if ($lower != null) and ($upper != null) {
+
+    @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
+      @media (min-width: $_lower) and (max-width: $_upper) { 
+        @content;
+      }
+    }
+
+  } @else {
+
+    @if ($_only-lower) {
+      @if map-has-key($breakpoints, $lower) {
+        @media (min-width: $_lower) { 
+          @content; 
+        }
+      }
+    }
+
+    @if ($_only-upper) {
+      @if map-has-key($breakpoints, $upper) {
+        @media (max-width: $_upper) { 
+          @content; 
+        }
+      }
+    }
+
+  }
+}

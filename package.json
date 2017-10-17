@@ -1,0 +1,26 @@
+{
+  "name": "saleseq-splash",
+  "version": "1.0.0",
+  "description": "SalesEQ pre-launch splash page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nuxt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pathship/saleseq-splash.git"
+  },
+  "author": "dave@grapheq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pathship/saleseq-splash/issues"
+  },
+  "homepage": "https://github.com/Pathship/saleseq-splash#readme",
+  "dependencies": {
+    "node-sass": "^4.5.3",
+    "nuxt": "^1.0.0-rc11",
+    "pug": "^2.0.0-rc.4",
+    "sass-loader": "^6.0.6"
+  }
+}
