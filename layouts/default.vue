@@ -17,4 +17,9 @@ export default {
     max-width: rem(1168);
     margin: 0 auto;
   }
+  
+  body {
+    background-color: color('blackhole');
+  }
+  
 </style>

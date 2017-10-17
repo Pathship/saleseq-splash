@@ -18,6 +18,6 @@ export default {
   @import "../styles/_globals.scss";
   
   .v-index {
-
+    
   }
 </style>

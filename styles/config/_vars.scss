@@ -23,6 +23,7 @@ $core-palette: (
 $palette: (
   'brand'         : map-get($core-palette, 'purple-primary'),
   'primary'       : map-get($core-palette, 'blue-primary'),
+  'off-primary'   : map-get($core-palette, 'aqua-secondary'),
   'lightest'      : map-get($core-palette, 'snow-tertiary'),
   'lighter'       : map-get($core-palette, 'smoke-tertiary'),
   'light'         : map-get($core-palette, 'silver-tertiary'),
