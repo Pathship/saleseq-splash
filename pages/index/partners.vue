@@ -52,7 +52,7 @@ export default {
     width: rem(96);
     height: rem(96);
     border-radius: 40rem;
-    box-shadow: 0 1px 2px rgba(0,0,0,.5);
+    box-shadow: 0 1px 4px rgba(0,0,0,.5);
     padding: space('md');
     border: .1rem solid color('blackhole');
     

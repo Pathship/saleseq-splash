@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nuxt"
+    "start": "nuxt",
+    "generate": "nuxt generate",
+    "build": "nuxt build"
   },
   "repository": {
     "type": "git",
