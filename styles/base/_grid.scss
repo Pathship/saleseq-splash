@@ -6,7 +6,7 @@ $_debug-rows: false;
 $_debug-cols: false;
 
 $_gutter-width: em(16);
-$_margin-width: em(16);
+$_margin-width: em(32);
 
 // Grid item
 @mixin _grid-item {
